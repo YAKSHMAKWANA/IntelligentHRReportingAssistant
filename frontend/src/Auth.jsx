@@ -1,45 +1,20 @@
 import { useState } from "react";
 
-const API_BASE = "https://intelligenthrreportingassistant.onrender.com/api";
-
-
-// =========================================================
-// GET CSRF TOKEN FROM COOKIE
-// =========================================================
-
-const getCSRFToken = () => {
-
-  const cookieName = "csrftoken=";
-
-  const cookies = document.cookie.split(";");
-
-  for (let cookie of cookies) {
-
-    cookie = cookie.trim();
-
-    if (cookie.startsWith(cookieName)) {
-
-      return decodeURIComponent(
-        cookie.substring(cookieName.length)
-      );
-    }
-  }
-
-  return "";
-};
-
+const API_BASE =
+  "https://intelligenthrreportingassistant.onrender.com/api";
 
 // =========================================================
-// INITIALIZE CSRF
+// GET CSRF TOKEN FROM SERVER RESPONSE
 // =========================================================
-
 const initializeCSRF = async () => {
-
   const response = await fetch(
     `${API_BASE}/auth/csrf/`,
     {
       method: "GET",
       credentials: "include",
+      headers: {
+        Accept: "application/json",
+      },
     }
   );
 
@@ -49,244 +24,171 @@ const initializeCSRF = async () => {
     );
   }
 
-  return response;
-};
+  const data = await response.json();
 
+  if (!data.csrfToken) {
+    throw new Error(
+      "CSRF token was not received from the server."
+    );
+  }
+
+  return data.csrfToken;
+};
 
 // =========================================================
 // AUTH COMPONENT
 // =========================================================
-
 function Auth({ onLogin }) {
-
-  const [isRegister, setIsRegister] =
-    useState(false);
-
-  const [username, setUsername] =
-    useState("");
-
-  const [password, setPassword] =
-    useState("");
-
-  const [loading, setLoading] =
-    useState(false);
-
-  const [error, setError] =
-    useState("");
-
-  const [success, setSuccess] =
-    useState("");
-
+  const [isRegister, setIsRegister] = useState(false);
+  const [username, setUsername] = useState("");
+  const [password, setPassword] = useState("");
+  const [loading, setLoading] = useState(false);
+  const [error, setError] = useState("");
+  const [success, setSuccess] = useState("");
 
   // =======================================================
   // LOGIN / REGISTER
   // =======================================================
-
   const handleSubmit = async (event) => {
-
     event.preventDefault();
 
     setError("");
     setSuccess("");
 
-
-    // Username validation
     if (!username.trim()) {
-
-      setError(
-        "Username is required."
-      );
-
+      setError("Username is required.");
       return;
     }
 
-
-    // Password validation
     if (!password.trim()) {
-
-      setError(
-        "Password is required."
-      );
-
+      setError("Password is required.");
       return;
     }
-
 
     setLoading(true);
 
-
     try {
+      // ---------------------------------------------------
+      // STEP 1: GET CSRF TOKEN FROM SERVER
+      // ---------------------------------------------------
+      const csrfToken = await initializeCSRF();
 
       // ---------------------------------------------------
-      // STEP 1: GET CSRF COOKIE
+      // STEP 2: SELECT ENDPOINT
       // ---------------------------------------------------
-
-      await initializeCSRF();
-
-
-      // ---------------------------------------------------
-      // STEP 2: READ CSRF TOKEN
-      // ---------------------------------------------------
-
-      const csrfToken =
-        getCSRFToken();
-
-
-      if (!csrfToken) {
-
-        throw new Error(
-          "CSRF token was not received from the server."
-        );
-      }
-
-
-      // ---------------------------------------------------
-      // STEP 3: SELECT ENDPOINT
-      // ---------------------------------------------------
-
       const endpoint = isRegister
         ? `${API_BASE}/auth/register/`
         : `${API_BASE}/auth/login/`;
 
-
       // ---------------------------------------------------
-      // STEP 4: SEND REQUEST
+      // STEP 3: SEND REQUEST
       // ---------------------------------------------------
-
       const response = await fetch(
         endpoint,
         {
           method: "POST",
-
           credentials: "include",
-
           headers: {
             "Content-Type": "application/json",
+            Accept: "application/json",
             "X-CSRFToken": csrfToken,
           },
-
           body: JSON.stringify({
-
-            username:
-              username.trim(),
-
-            password:
-              password.trim(),
-
+            username: username.trim(),
+            password: password.trim(),
           }),
         }
       );
 
-
       // ---------------------------------------------------
-      // STEP 5: READ RESPONSE
+      // STEP 4: READ RESPONSE SAFELY
       // ---------------------------------------------------
+      let data = {};
 
-      const data =
-        await response.json();
-
-
-      // ---------------------------------------------------
-      // STEP 6: HANDLE ERROR
-      // ---------------------------------------------------
+      const contentType =
+        response.headers.get("content-type") || "";
 
       if (
-        !response.ok ||
-        !data.success
+        contentType.includes("application/json")
       ) {
+        data = await response.json();
+      } else {
+        const text = await response.text();
 
+        if (text) {
+          data = {
+            error: text,
+          };
+        }
+      }
+
+      // ---------------------------------------------------
+      // STEP 5: HANDLE ERROR
+      // ---------------------------------------------------
+      if (
+        !response.ok ||
+        data.success === false
+      ) {
         throw new Error(
           data.error ||
+          data.detail ||
           "Authentication failed."
         );
       }
 
-
       // ---------------------------------------------------
-      // STEP 7: SUCCESS
+      // STEP 6: SUCCESS
       // ---------------------------------------------------
-
       setSuccess(
         data.message ||
-        "Login successful."
+        (isRegister
+          ? "Account created successfully."
+          : "Login successful.")
       );
-
 
       setPassword("");
 
-
-      // Send logged-in user to App
-      if (onLogin) {
-
-        onLogin(
-          data.user
-        );
+      if (onLogin && data.user) {
+        onLogin(data.user);
       }
 
-
     } catch (err) {
-
       console.error(
         "Authentication error:",
         err
       );
-
 
       setError(
         err.message ||
         "Unable to connect to the server."
       );
 
-
     } finally {
-
       setLoading(false);
-
     }
   };
-
 
   // =======================================================
   // SWITCH LOGIN / REGISTER
   // =======================================================
-
   const switchMode = () => {
-
-    setIsRegister(
-      !isRegister
-    );
-
+    setIsRegister(!isRegister);
     setUsername("");
     setPassword("");
     setError("");
     setSuccess("");
-
   };
-
 
   // =======================================================
   // UI
   // =======================================================
-
   return (
-
     <div className="auth-page">
-
       <div className="auth-card">
-
-
-        {/* =================================================
-            LOGO
-        ================================================== */}
 
         <div className="auth-logo">
           HR
         </div>
-
-
-        {/* =================================================
-            TITLE
-        ================================================== */}
 
         <h1>
           Intelligent HR
@@ -296,70 +198,33 @@ function Auth({ onLogin }) {
           Reporting Assistant
         </p>
 
-
-        {/* =================================================
-            FORM TITLE
-        ================================================== */}
-
         <h2>
           {isRegister
             ? "Create your account"
             : "Welcome back"}
         </h2>
 
-
         <p className="auth-description">
-
           {isRegister
             ? "Create an account to start analyzing your HR data."
             : "Sign in to access your HR reporting dashboard."}
-
         </p>
 
-
-        {/* =================================================
-            ERROR
-        ================================================== */}
-
         {error && (
-
           <div className="auth-alert auth-error">
-
             ⚠️ {error}
-
           </div>
-
         )}
-
-
-        {/* =================================================
-            SUCCESS
-        ================================================== */}
 
         {success && (
-
           <div className="auth-alert auth-success">
-
             ✅ {success}
-
           </div>
-
         )}
 
-
-        {/* =================================================
-            FORM
-        ================================================== */}
-
-        <form
-          onSubmit={handleSubmit}
-        >
-
-
-          {/* USERNAME */}
+        <form onSubmit={handleSubmit}>
 
           <div className="form-group">
-
             <label htmlFor="username">
               Username
             </label>
@@ -369,22 +234,15 @@ function Auth({ onLogin }) {
               type="text"
               value={username}
               onChange={(event) =>
-                setUsername(
-                  event.target.value
-                )
+                setUsername(event.target.value)
               }
               placeholder="Enter your username"
               autoComplete="username"
               disabled={loading}
             />
-
           </div>
 
-
-          {/* PASSWORD */}
-
           <div className="form-group">
-
             <label htmlFor="password">
               Password
             </label>
@@ -394,9 +252,7 @@ function Auth({ onLogin }) {
               type="password"
               value={password}
               onChange={(event) =>
-                setPassword(
-                  event.target.value
-                )
+                setPassword(event.target.value)
               }
               placeholder="Enter your password"
               autoComplete={
@@ -406,63 +262,43 @@ function Auth({ onLogin }) {
               }
               disabled={loading}
             />
-
           </div>
-
-
-          {/* SUBMIT BUTTON */}
 
           <button
             type="submit"
             className="auth-submit-button"
             disabled={loading}
           >
-
             {loading
               ? "Please wait..."
               : isRegister
                 ? "Create Account"
                 : "Login"}
-
           </button>
 
         </form>
 
-
-        {/* =================================================
-            SWITCH LOGIN / REGISTER
-        ================================================== */}
-
         <div className="auth-switch">
-
           <span>
-
             {isRegister
               ? "Already have an account?"
               : "Don't have an account?"}
-
           </span>
-
 
           <button
             type="button"
             onClick={switchMode}
             disabled={loading}
           >
-
             {isRegister
               ? "Login"
               : "Create account"}
-
           </button>
-
         </div>
 
       </div>
-
     </div>
   );
 }
-
 
 export default Auth;

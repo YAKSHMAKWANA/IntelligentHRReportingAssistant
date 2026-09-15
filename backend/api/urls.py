@@ -1,4 +1,5 @@
 from django.urls import path
+from .csrf_views import csrf_token
 
 from .views import EmployeeListAPIView, DatasetListAPIView
 from .report_views import HRReportListAPIView, HRReportCreateAPIView
@@ -7,6 +8,7 @@ from .assistant_views import HRAssistantAPIView
 from .import_views import ImportHRRecordsAPIView
 
 urlpatterns = [
+    path("auth/csrf/", csrf_token, name="csrf-token"),
     path(
         "employees/",
         EmployeeListAPIView.as_view(),
