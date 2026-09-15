@@ -114,19 +114,17 @@ WSGI_APPLICATION = 'config.wsgi.application'
 # Database
 # ---------------------------------------------------------
 
-import os
-
-
 DATABASES = {
-    "default": {
-        "ENGINE": "django.db.backends.mysql",
-        "NAME": os.environ.get("DB_NAME"),
-        "USER": os.environ.get("DB_USER"),
-        "PASSWORD": os.environ.get("DB_PASSWORD"),
-        "HOST": os.environ.get("DB_HOST"),
-        "PORT": os.environ.get("DB_PORT", "3306"),
+    'default': {
+        'ENGINE': 'django.db.backends.mysql',
+        'NAME': 'hr_reporting',
+        'USER': 'hr_admin',
+        'PASSWORD': '999999',
+        'HOST': 'localhost',
+        'PORT': '3306',
     }
 }
+
 
 # ---------------------------------------------------------
 # Password validation
