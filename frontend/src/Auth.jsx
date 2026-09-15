@@ -1,6 +1,6 @@
 import { useState } from "react";
 
-const API_BASE = "http://localhost:8000/api";
+const API_BASE = "https://intelligenthrreportingassistant.onrender.com/api";
 
 
 // =========================================================
