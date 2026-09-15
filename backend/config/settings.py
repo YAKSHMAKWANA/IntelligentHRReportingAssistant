@@ -31,7 +31,6 @@ ALLOWED_HOSTS = [
     "127.0.0.1",
 ]
 
-
 # ---------------------------------------------------------
 # Application definition
 # ---------------------------------------------------------
@@ -184,16 +183,18 @@ CORS_ALLOWED_ORIGINS = [
     "https://frontend-git-main-yaksh2.vercel.app",
 ]
 
-# Allow browser to send Django session cookies
 CORS_ALLOW_CREDENTIALS = True
-
-
-# ---------------------------------------------------------
-# CSRF Configuration
-# ---------------------------------------------------------
 
 CSRF_TRUSTED_ORIGINS = [
     "http://localhost:5173",
     "http://127.0.0.1:5173",
     "https://frontend-git-main-yaksh2.vercel.app",
+    "https://intelligenthrreportingassistant.onrender.com",
 ]
+
+# Required because frontend and backend are on different HTTPS domains
+CSRF_COOKIE_SECURE = True
+CSRF_COOKIE_SAMESITE = "None"
+
+SESSION_COOKIE_SECURE = True
+SESSION_COOKIE_SAMESITE = "None"
