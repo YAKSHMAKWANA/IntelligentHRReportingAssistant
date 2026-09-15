@@ -1,0 +1,251 @@
+employee_id,first_name,last_name,email,department,job_title,hire_date,status,effective_start_date,effective_end_date
+EMP0001,Aarav,Patel,employee0001@example.com,IT,Backend Developer,2025-08-20,ACTIVE,2025-08-20,
+EMP0002,Vivaan,Patel,employee0002@example.com,IT,Frontend Developer,2026-03-29,ACTIVE,2026-03-29,
+EMP0003,Aditya,Patel,employee0003@example.com,Administration,Admin Manager,2024-12-11,ACTIVE,2024-12-11,
+EMP0004,Arjun,Patel,employee0004@example.com,Sales,Sales Executive,2020-11-26,ACTIVE,2020-11-26,
+EMP0005,Rohan,Patel,employee0005@example.com,IT,Backend Developer,2021-02-05,ACTIVE,2021-02-05,
+EMP0006,Rahul,Patel,employee0006@example.com,Customer Support,Support Executive,2025-07-01,ACTIVE,2025-07-01,
+EMP0007,Kunal,Patel,employee0007@example.com,Operations,Operations Manager,2024-06-15,ACTIVE,2024-06-15,
+EMP0008,Harsh,Patel,employee0008@example.com,Marketing,Digital Marketing Specialist,2023-12-31,ACTIVE,2023-12-31,
+EMP0009,Yash,Patel,employee0009@example.com,Administration,Admin Executive,2023-10-26,ACTIVE,2023-10-26,
+EMP0010,Dhruv,Patel,employee0010@example.com,IT,QA Engineer,2026-01-12,ACTIVE,2026-01-12,
+EMP0011,Kabir,Patel,employee0011@example.com,Marketing,Digital Marketing Specialist,2025-02-16,ACTIVE,2025-02-16,
+EMP0012,Vihaan,Patel,employee0012@example.com,Finance,Financial Analyst,2020-04-11,ACTIVE,2020-04-11,
+EMP0013,Ayaan,Patel,employee0013@example.com,Operations,Operations Analyst,2025-03-03,ACTIVE,2025-03-03,
+EMP0014,Reyansh,Patel,employee0014@example.com,Administration,Admin Executive,2024-06-21,ACTIVE,2024-06-21,
+EMP0015,Ishaan,Patel,employee0015@example.com,Customer Support,Support Executive,2024-10-08,ACTIVE,2024-10-08,
+EMP0016,Krish,Patel,employee0016@example.com,Customer Support,Support Analyst,2025-11-18,ACTIVE,2025-11-18,
+EMP0017,Dev,Patel,employee0017@example.com,Marketing,Content Specialist,2026-04-29,ACTIVE,2026-04-29,
+EMP0018,Manav,Patel,employee0018@example.com,Customer Support,Support Executive,2026-06-15,ACTIVE,2026-06-15,
+EMP0019,Parth,Patel,employee0019@example.com,Sales,Sales Manager,2020-07-19,ACTIVE,2020-07-19,
+EMP0020,Rudra,Patel,employee0020@example.com,IT,System Administrator,2024-10-24,ACTIVE,2024-10-24,
+EMP0021,Ananya,Patel,employee0021@example.com,Customer Support,Support Manager,2025-05-28,ACTIVE,2025-05-28,
+EMP0022,Diya,Patel,employee0022@example.com,Sales,Sales Executive,2025-02-14,ACTIVE,2025-02-14,
+EMP0023,Isha,Patel,employee0023@example.com,Customer Support,Customer Success Specialist,2026-04-11,ACTIVE,2026-04-11,
+EMP0024,Priya,Patel,employee0024@example.com,Administration,Office Manager,2026-02-23,ACTIVE,2026-02-23,
+EMP0025,Kavya,Patel,employee0025@example.com,Customer Support,Support Analyst,2024-11-08,ACTIVE,2024-11-08,
+EMP0026,Neha,Patel,employee0026@example.com,Sales,Business Development Executive,2023-01-06,ACTIVE,2023-01-06,
+EMP0027,Riya,Patel,employee0027@example.com,HR,HR Executive,2021-09-05,ACTIVE,2021-09-05,
+EMP0028,Meera,Patel,employee0028@example.com,Customer Support,Support Analyst,2024-01-14,ACTIVE,2024-01-14,
+EMP0029,Pooja,Patel,employee0029@example.com,Sales,Business Development Executive,2025-06-11,ACTIVE,2025-06-11,
+EMP0030,Aditi,Patel,employee0030@example.com,Customer Support,Support Analyst,2024-11-13,ACTIVE,2024-11-13,
+EMP0031,Nisha,Patel,employee0031@example.com,HR,Recruitment Specialist,2023-07-21,ACTIVE,2023-07-21,
+EMP0032,Sneha,Patel,employee0032@example.com,Customer Support,Support Executive,2024-11-30,ACTIVE,2024-11-30,
+EMP0033,Simran,Patel,employee0033@example.com,Marketing,Content Specialist,2022-01-19,ACTIVE,2022-01-19,
+EMP0034,Tanya,Patel,employee0034@example.com,Administration,Admin Manager,2020-09-20,ACTIVE,2020-09-20,
+EMP0035,Avni,Patel,employee0035@example.com,Marketing,Content Specialist,2024-02-25,ACTIVE,2024-02-25,
+EMP0036,Kiara,Patel,employee0036@example.com,IT,Frontend Developer,2024-08-11,ACTIVE,2024-08-11,
+EMP0037,Myra,Patel,employee0037@example.com,Finance,Senior Accountant,2020-02-27,ACTIVE,2020-02-27,
+EMP0038,Sara,Patel,employee0038@example.com,IT,Software Developer,2025-01-22,ACTIVE,2025-01-22,
+EMP0039,Anika,Patel,employee0039@example.com,IT,QA Engineer,2022-03-25,ACTIVE,2022-03-25,
+EMP0040,Shreya,Patel,employee0040@example.com,Sales,Sales Executive,2020-07-01,ACTIVE,2020-07-01,
+EMP0041,Aarav,Shah,employee0041@example.com,Marketing,Digital Marketing Specialist,2021-09-25,ACTIVE,2021-09-25,
+EMP0042,Vivaan,Shah,employee0042@example.com,HR,Recruitment Specialist,2026-07-16,ACTIVE,2026-07-16,
+EMP0043,Aditya,Shah,employee0043@example.com,Customer Support,Support Manager,2026-02-13,ACTIVE,2026-02-13,
+EMP0044,Arjun,Shah,employee0044@example.com,Sales,Account Manager,2021-06-21,ACTIVE,2021-06-21,
+EMP0045,Rohan,Shah,employee0045@example.com,Marketing,Marketing Executive,2024-09-07,ACTIVE,2024-09-07,
+EMP0046,Rahul,Shah,employee0046@example.com,Finance,Accountant,2026-07-28,ACTIVE,2026-07-28,
+EMP0047,Kunal,Shah,employee0047@example.com,Marketing,Content Specialist,2024-05-18,ACTIVE,2024-05-18,
+EMP0048,Harsh,Shah,employee0048@example.com,Finance,Accountant,2024-03-20,ACTIVE,2024-03-20,
+EMP0049,Yash,Shah,employee0049@example.com,HR,HR Executive,2024-05-13,ACTIVE,2024-05-13,
+EMP0050,Dhruv,Shah,employee0050@example.com,IT,Software Developer,2023-11-22,ACTIVE,2023-11-22,
+EMP0051,Kabir,Shah,employee0051@example.com,Operations,Operations Executive,2020-04-14,ACTIVE,2020-04-14,
+EMP0052,Vihaan,Shah,employee0052@example.com,Customer Support,Customer Success Specialist,2023-05-28,ACTIVE,2023-05-28,
+EMP0053,Ayaan,Shah,employee0053@example.com,Customer Support,Customer Success Specialist,2021-05-12,ACTIVE,2021-05-12,
+EMP0054,Reyansh,Shah,employee0054@example.com,Customer Support,Support Analyst,2026-05-30,ACTIVE,2026-05-30,
+EMP0055,Ishaan,Shah,employee0055@example.com,Finance,Accountant,2025-10-29,ACTIVE,2025-10-29,
+EMP0056,Krish,Shah,employee0056@example.com,Sales,Account Manager,2023-10-09,ACTIVE,2023-10-09,
+EMP0057,Dev,Shah,employee0057@example.com,Customer Support,Support Manager,2020-10-11,ACTIVE,2020-10-11,
+EMP0058,Manav,Shah,employee0058@example.com,Administration,Admin Executive,2022-03-11,ACTIVE,2022-03-11,
+EMP0059,Parth,Shah,employee0059@example.com,Finance,Finance Manager,2026-02-09,ACTIVE,2026-02-09,
+EMP0060,Rudra,Shah,employee0060@example.com,HR,HR Analyst,2022-02-11,ACTIVE,2022-02-11,
+EMP0061,Ananya,Shah,employee0061@example.com,Customer Support,Support Executive,2021-06-12,ACTIVE,2021-06-12,
+EMP0062,Diya,Shah,employee0062@example.com,Sales,Sales Manager,2021-10-18,ACTIVE,2021-10-18,
+EMP0063,Isha,Shah,employee0063@example.com,Finance,Senior Accountant,2023-01-22,ACTIVE,2023-01-22,
+EMP0064,Priya,Shah,employee0064@example.com,Administration,Admin Manager,2020-11-18,ACTIVE,2020-11-18,
+EMP0065,Kavya,Shah,employee0065@example.com,Administration,Office Manager,2022-02-05,ACTIVE,2022-02-05,
+EMP0066,Neha,Shah,employee0066@example.com,Operations,Operations Manager,2022-12-15,ACTIVE,2022-12-15,
+EMP0067,Riya,Shah,employee0067@example.com,Customer Support,Support Analyst,2024-08-29,ACTIVE,2024-08-29,
+EMP0068,Meera,Shah,employee0068@example.com,Marketing,Content Specialist,2021-12-25,ACTIVE,2021-12-25,
+EMP0069,Pooja,Shah,employee0069@example.com,Operations,Process Analyst,2024-12-26,ACTIVE,2024-12-26,
+EMP0070,Aditi,Shah,employee0070@example.com,IT,QA Engineer,2025-11-19,ACTIVE,2025-11-19,
+EMP0071,Nisha,Shah,employee0071@example.com,Marketing,Marketing Executive,2022-05-27,ACTIVE,2022-05-27,
+EMP0072,Sneha,Shah,employee0072@example.com,Sales,Sales Executive,2021-01-16,ACTIVE,2021-01-16,
+EMP0073,Simran,Shah,employee0073@example.com,Customer Support,Customer Success Specialist,2024-07-29,ACTIVE,2024-07-29,
+EMP0074,Tanya,Shah,employee0074@example.com,Finance,Finance Manager,2023-12-12,ACTIVE,2023-12-12,
+EMP0075,Avni,Shah,employee0075@example.com,Finance,Financial Analyst,2026-04-20,ACTIVE,2026-04-20,
+EMP0076,Kiara,Shah,employee0076@example.com,Sales,Sales Executive,2023-02-22,ACTIVE,2023-02-22,
+EMP0077,Myra,Shah,employee0077@example.com,Sales,Business Development Executive,2026-04-24,ACTIVE,2026-04-24,
+EMP0078,Sara,Shah,employee0078@example.com,Marketing,Marketing Manager,2021-02-19,ACTIVE,2021-02-19,
+EMP0079,Anika,Shah,employee0079@example.com,Marketing,Marketing Executive,2024-11-21,ACTIVE,2024-11-21,
+EMP0080,Shreya,Shah,employee0080@example.com,Finance,Finance Manager,2020-09-04,ACTIVE,2020-09-04,
+EMP0081,Aarav,Mehta,employee0081@example.com,Operations,Operations Manager,2021-03-11,ACTIVE,2021-03-11,
+EMP0082,Vivaan,Mehta,employee0082@example.com,Operations,Operations Analyst,2020-09-18,ACTIVE,2020-09-18,
+EMP0083,Aditya,Mehta,employee0083@example.com,Marketing,Digital Marketing Specialist,2021-10-23,ACTIVE,2021-10-23,
+EMP0084,Arjun,Mehta,employee0084@example.com,Marketing,Digital Marketing Specialist,2020-09-14,ACTIVE,2020-09-14,
+EMP0085,Rohan,Mehta,employee0085@example.com,HR,HR Analyst,2022-11-18,ACTIVE,2022-11-18,
+EMP0086,Rahul,Mehta,employee0086@example.com,Administration,Admin Executive,2020-08-22,ACTIVE,2020-08-22,
+EMP0087,Kunal,Mehta,employee0087@example.com,IT,Frontend Developer,2020-04-04,ACTIVE,2020-04-04,
+EMP0088,Harsh,Mehta,employee0088@example.com,Marketing,Marketing Executive,2021-01-19,ACTIVE,2021-01-19,
+EMP0089,Yash,Mehta,employee0089@example.com,Operations,Operations Analyst,2025-02-10,ACTIVE,2025-02-10,
+EMP0090,Dhruv,Mehta,employee0090@example.com,HR,HR Analyst,2023-07-18,ACTIVE,2023-07-18,
+EMP0091,Kabir,Mehta,employee0091@example.com,Sales,Account Manager,2024-10-11,ACTIVE,2024-10-11,
+EMP0092,Vihaan,Mehta,employee0092@example.com,IT,System Administrator,2024-03-12,ACTIVE,2024-03-12,
+EMP0093,Ayaan,Mehta,employee0093@example.com,Marketing,Content Specialist,2023-04-10,ACTIVE,2023-04-10,
+EMP0094,Reyansh,Mehta,employee0094@example.com,Operations,Operations Executive,2024-11-23,ACTIVE,2024-11-23,
+EMP0095,Ishaan,Mehta,employee0095@example.com,HR,Recruitment Specialist,2023-09-15,ACTIVE,2023-09-15,
+EMP0096,Krish,Mehta,employee0096@example.com,Marketing,Marketing Executive,2023-05-01,ACTIVE,2023-05-01,
+EMP0097,Dev,Mehta,employee0097@example.com,Administration,Office Manager,2026-07-26,ACTIVE,2026-07-26,
+EMP0098,Manav,Mehta,employee0098@example.com,HR,Recruitment Specialist,2022-03-19,ACTIVE,2022-03-19,
+EMP0099,Parth,Mehta,employee0099@example.com,HR,HR Executive,2021-10-26,ACTIVE,2021-10-26,
+EMP0100,Rudra,Mehta,employee0100@example.com,IT,Software Developer,2020-06-01,ACTIVE,2020-06-01,
+EMP0101,Ananya,Mehta,employee0101@example.com,Finance,Financial Analyst,2023-05-22,ACTIVE,2023-05-22,
+EMP0102,Diya,Mehta,employee0102@example.com,HR,HR Analyst,2026-06-26,ACTIVE,2026-06-26,
+EMP0103,Isha,Mehta,employee0103@example.com,Finance,Financial Analyst,2024-08-28,ACTIVE,2024-08-28,
+EMP0104,Priya,Mehta,employee0104@example.com,Administration,Admin Manager,2022-09-07,ACTIVE,2022-09-07,
+EMP0105,Kavya,Mehta,employee0105@example.com,Administration,Administrative Assistant,2021-05-27,ACTIVE,2021-05-27,
+EMP0106,Neha,Mehta,employee0106@example.com,Finance,Finance Manager,2026-01-26,ACTIVE,2026-01-26,
+EMP0107,Riya,Mehta,employee0107@example.com,Administration,Office Manager,2021-08-27,ACTIVE,2021-08-27,
+EMP0108,Meera,Mehta,employee0108@example.com,Sales,Sales Executive,2020-03-08,ACTIVE,2020-03-08,
+EMP0109,Pooja,Mehta,employee0109@example.com,Marketing,Content Specialist,2024-09-07,ACTIVE,2024-09-07,
+EMP0110,Aditi,Mehta,employee0110@example.com,Marketing,Digital Marketing Specialist,2021-07-21,ACTIVE,2021-07-21,
+EMP0111,Nisha,Mehta,employee0111@example.com,IT,Frontend Developer,2026-03-15,ACTIVE,2026-03-15,
+EMP0112,Sneha,Mehta,employee0112@example.com,HR,Recruitment Specialist,2023-10-27,ACTIVE,2023-10-27,
+EMP0113,Simran,Mehta,employee0113@example.com,Operations,Operations Executive,2020-02-16,ACTIVE,2020-02-16,
+EMP0114,Tanya,Mehta,employee0114@example.com,Sales,Account Manager,2020-08-26,ACTIVE,2020-08-26,
+EMP0115,Avni,Mehta,employee0115@example.com,Sales,Sales Manager,2024-06-22,ACTIVE,2024-06-22,
+EMP0116,Kiara,Mehta,employee0116@example.com,Operations,Operations Manager,2026-04-19,ACTIVE,2026-04-19,
+EMP0117,Myra,Mehta,employee0117@example.com,Marketing,Digital Marketing Specialist,2022-04-03,ACTIVE,2022-04-03,
+EMP0118,Sara,Mehta,employee0118@example.com,Operations,Operations Analyst,2025-02-24,ACTIVE,2025-02-24,
+EMP0119,Anika,Mehta,employee0119@example.com,Customer Support,Support Analyst,2026-07-06,ACTIVE,2026-07-06,
+EMP0120,Shreya,Mehta,employee0120@example.com,Marketing,Marketing Manager,2021-10-10,ACTIVE,2021-10-10,
+EMP0121,Aarav,Joshi,employee0121@example.com,Administration,Administrative Assistant,2025-06-08,ACTIVE,2025-06-08,
+EMP0122,Vivaan,Joshi,employee0122@example.com,HR,Recruitment Specialist,2025-11-13,ACTIVE,2025-11-13,
+EMP0123,Aditya,Joshi,employee0123@example.com,Administration,Admin Executive,2021-12-07,ACTIVE,2021-12-07,
+EMP0124,Arjun,Joshi,employee0124@example.com,IT,Backend Developer,2024-03-06,ACTIVE,2024-03-06,
+EMP0125,Rohan,Joshi,employee0125@example.com,Marketing,Marketing Manager,2021-02-16,ACTIVE,2021-02-16,
+EMP0126,Rahul,Joshi,employee0126@example.com,HR,HR Manager,2026-07-13,ACTIVE,2026-07-13,
+EMP0127,Kunal,Joshi,employee0127@example.com,Marketing,Marketing Executive,2024-05-29,ACTIVE,2024-05-29,
+EMP0128,Harsh,Joshi,employee0128@example.com,Administration,Administrative Assistant,2025-09-14,ACTIVE,2025-09-14,
+EMP0129,Yash,Joshi,employee0129@example.com,IT,Software Developer,2021-08-04,ACTIVE,2021-08-04,
+EMP0130,Dhruv,Joshi,employee0130@example.com,Administration,Office Manager,2026-02-20,ACTIVE,2026-02-20,
+EMP0131,Kabir,Joshi,employee0131@example.com,Marketing,Digital Marketing Specialist,2020-06-19,ACTIVE,2020-06-19,
+EMP0132,Vihaan,Joshi,employee0132@example.com,Sales,Sales Manager,2023-04-14,ACTIVE,2023-04-14,
+EMP0133,Ayaan,Joshi,employee0133@example.com,Marketing,Digital Marketing Specialist,2024-01-03,ACTIVE,2024-01-03,
+EMP0134,Reyansh,Joshi,employee0134@example.com,Finance,Senior Accountant,2022-02-11,ACTIVE,2022-02-11,
+EMP0135,Ishaan,Joshi,employee0135@example.com,HR,HR Analyst,2024-09-27,ACTIVE,2024-09-27,
+EMP0136,Krish,Joshi,employee0136@example.com,Operations,Operations Manager,2025-10-15,ACTIVE,2025-10-15,
+EMP0137,Dev,Joshi,employee0137@example.com,HR,HR Manager,2023-07-12,ACTIVE,2023-07-12,
+EMP0138,Manav,Joshi,employee0138@example.com,Finance,Accountant,2020-04-26,ACTIVE,2020-04-26,
+EMP0139,Parth,Joshi,employee0139@example.com,IT,QA Engineer,2020-01-09,ACTIVE,2020-01-09,
+EMP0140,Rudra,Joshi,employee0140@example.com,Operations,Operations Executive,2024-02-16,ACTIVE,2024-02-16,
+EMP0141,Ananya,Joshi,employee0141@example.com,Marketing,Marketing Manager,2025-12-19,ACTIVE,2025-12-19,
+EMP0142,Diya,Joshi,employee0142@example.com,Finance,Accountant,2021-06-02,ACTIVE,2021-06-02,
+EMP0143,Isha,Joshi,employee0143@example.com,IT,Backend Developer,2025-06-07,ACTIVE,2025-06-07,
+EMP0144,Priya,Joshi,employee0144@example.com,IT,System Administrator,2020-10-26,ACTIVE,2020-10-26,
+EMP0145,Kavya,Joshi,employee0145@example.com,Administration,Office Manager,2023-05-19,ACTIVE,2023-05-19,
+EMP0146,Neha,Joshi,employee0146@example.com,IT,Backend Developer,2025-04-27,ACTIVE,2025-04-27,
+EMP0147,Riya,Joshi,employee0147@example.com,Customer Support,Support Executive,2026-03-25,ACTIVE,2026-03-25,
+EMP0148,Meera,Joshi,employee0148@example.com,Sales,Business Development Executive,2025-02-10,ACTIVE,2025-02-10,
+EMP0149,Pooja,Joshi,employee0149@example.com,Operations,Operations Executive,2020-10-09,ACTIVE,2020-10-09,
+EMP0150,Aditi,Joshi,employee0150@example.com,IT,DevOps Engineer,2023-07-02,ACTIVE,2023-07-02,
+EMP0151,Nisha,Joshi,employee0151@example.com,Marketing,Marketing Manager,2021-11-20,ACTIVE,2021-11-20,
+EMP0152,Sneha,Joshi,employee0152@example.com,Operations,Process Analyst,2025-09-04,ACTIVE,2025-09-04,
+EMP0153,Simran,Joshi,employee0153@example.com,Operations,Operations Analyst,2025-07-13,ACTIVE,2025-07-13,
+EMP0154,Tanya,Joshi,employee0154@example.com,Administration,Office Manager,2021-12-24,ACTIVE,2021-12-24,
+EMP0155,Avni,Joshi,employee0155@example.com,Sales,Account Manager,2022-06-20,ACTIVE,2022-06-20,
+EMP0156,Kiara,Joshi,employee0156@example.com,Operations,Operations Analyst,2024-08-05,ACTIVE,2024-08-05,
+EMP0157,Myra,Joshi,employee0157@example.com,Administration,Administrative Assistant,2021-09-24,ACTIVE,2021-09-24,
+EMP0158,Sara,Joshi,employee0158@example.com,Customer Support,Support Manager,2024-11-01,ACTIVE,2024-11-01,
+EMP0159,Anika,Joshi,employee0159@example.com,Marketing,Digital Marketing Specialist,2021-04-27,ACTIVE,2021-04-27,
+EMP0160,Shreya,Joshi,employee0160@example.com,Operations,Operations Analyst,2024-12-25,ACTIVE,2024-12-25,
+EMP0161,Aarav,Desai,employee0161@example.com,Marketing,Marketing Manager,2026-02-10,ACTIVE,2026-02-10,
+EMP0162,Vivaan,Desai,employee0162@example.com,Marketing,Marketing Manager,2023-09-20,ACTIVE,2023-09-20,
+EMP0163,Aditya,Desai,employee0163@example.com,Finance,Finance Manager,2023-01-02,ACTIVE,2023-01-02,
+EMP0164,Arjun,Desai,employee0164@example.com,Marketing,Content Specialist,2024-07-01,ACTIVE,2024-07-01,
+EMP0165,Rohan,Desai,employee0165@example.com,Administration,Admin Executive,2026-03-01,ACTIVE,2026-03-01,
+EMP0166,Rahul,Desai,employee0166@example.com,Operations,Process Analyst,2023-10-11,INACTIVE,2023-10-11,2024-10-19
+EMP0167,Kunal,Desai,employee0167@example.com,Customer Support,Support Manager,2024-10-04,INACTIVE,2024-10-04,2027-03-24
+EMP0168,Harsh,Desai,employee0168@example.com,Operations,Operations Executive,2024-06-25,INACTIVE,2024-06-25,2025-12-11
+EMP0169,Yash,Desai,employee0169@example.com,HR,Recruitment Specialist,2026-04-08,INACTIVE,2026-04-08,2028-03-04
+EMP0170,Dhruv,Desai,employee0170@example.com,Finance,Financial Analyst,2026-06-29,INACTIVE,2026-06-29,2030-08-06
+EMP0171,Kabir,Desai,employee0171@example.com,Administration,Admin Manager,2025-06-01,INACTIVE,2025-06-01,2027-10-22
+EMP0172,Vihaan,Desai,employee0172@example.com,HR,HR Executive,2022-06-19,INACTIVE,2022-06-19,2026-07-11
+EMP0173,Ayaan,Desai,employee0173@example.com,IT,System Administrator,2023-01-05,INACTIVE,2023-01-05,2025-05-02
+EMP0174,Reyansh,Desai,employee0174@example.com,HR,HR Manager,2025-02-15,INACTIVE,2025-02-15,2028-07-03
+EMP0175,Ishaan,Desai,employee0175@example.com,Marketing,Digital Marketing Specialist,2020-11-19,INACTIVE,2020-11-19,2024-06-29
+EMP0176,Krish,Desai,employee0176@example.com,Sales,Sales Executive,2021-01-26,INACTIVE,2021-01-26,2022-06-09
+EMP0177,Dev,Desai,employee0177@example.com,Operations,Operations Manager,2025-03-13,INACTIVE,2025-03-13,2026-11-05
+EMP0178,Manav,Desai,employee0178@example.com,Finance,Financial Analyst,2020-12-11,INACTIVE,2020-12-11,2024-08-14
+EMP0179,Parth,Desai,employee0179@example.com,Administration,Administrative Assistant,2021-03-18,INACTIVE,2021-03-18,2021-11-10
+EMP0180,Rudra,Desai,employee0180@example.com,Marketing,Content Specialist,2020-07-01,INACTIVE,2020-07-01,2022-01-11
+EMP0181,Ananya,Desai,employee0181@example.com,Sales,Account Manager,2023-10-29,INACTIVE,2023-10-29,2026-03-30
+EMP0182,Diya,Desai,employee0182@example.com,Operations,Operations Analyst,2025-05-18,INACTIVE,2025-05-18,2027-04-20
+EMP0183,Isha,Desai,employee0183@example.com,Customer Support,Customer Success Specialist,2022-10-21,INACTIVE,2022-10-21,2023-07-03
+EMP0184,Priya,Desai,employee0184@example.com,Customer Support,Support Manager,2020-03-30,INACTIVE,2020-03-30,2023-06-07
+EMP0185,Kavya,Desai,employee0185@example.com,Operations,Operations Analyst,2025-03-24,INACTIVE,2025-03-24,2026-11-01
+EMP0186,Neha,Desai,employee0186@example.com,Operations,Operations Analyst,2025-09-29,INACTIVE,2025-09-29,2028-06-24
+EMP0187,Riya,Desai,employee0187@example.com,Marketing,Marketing Manager,2026-07-10,INACTIVE,2026-07-10,2027-04-26
+EMP0188,Meera,Desai,employee0188@example.com,Administration,Admin Executive,2025-09-15,INACTIVE,2025-09-15,2029-03-08
+EMP0189,Pooja,Desai,employee0189@example.com,Marketing,Content Specialist,2021-01-06,INACTIVE,2021-01-06,2024-05-13
+EMP0190,Aditi,Desai,employee0190@example.com,Operations,Process Analyst,2023-07-26,INACTIVE,2023-07-26,2025-12-17
+EMP0191,Nisha,Desai,employee0191@example.com,Operations,Operations Manager,2020-11-15,INACTIVE,2020-11-15,2024-07-08
+EMP0192,Sneha,Desai,employee0192@example.com,Finance,Financial Analyst,2025-12-02,INACTIVE,2025-12-02,2029-05-01
+EMP0193,Simran,Desai,employee0193@example.com,Administration,Admin Executive,2022-05-29,INACTIVE,2022-05-29,2023-01-23
+EMP0194,Tanya,Desai,employee0194@example.com,Customer Support,Support Manager,2022-05-08,INACTIVE,2022-05-08,2025-03-31
+EMP0195,Avni,Desai,employee0195@example.com,Finance,Accountant,2023-01-13,INACTIVE,2023-01-13,2026-04-07
+EMP0196,Kiara,Desai,employee0196@example.com,Finance,Financial Analyst,2024-01-29,INACTIVE,2024-01-29,2026-10-07
+EMP0197,Myra,Desai,employee0197@example.com,Sales,Sales Manager,2026-03-08,INACTIVE,2026-03-08,2027-07-14
+EMP0198,Sara,Desai,employee0198@example.com,Finance,Accountant,2026-06-04,INACTIVE,2026-06-04,2027-04-05
+EMP0199,Anika,Desai,employee0199@example.com,HR,Recruitment Specialist,2023-05-11,INACTIVE,2023-05-11,2024-11-07
+EMP0200,Shreya,Desai,employee0200@example.com,Finance,Financial Analyst,2026-01-22,INACTIVE,2026-01-22,2028-07-20
+EMP0201,Aarav,Trivedi,employee0201@example.com,Finance,Senior Accountant,2021-11-20,INACTIVE,2021-11-20,2023-06-05
+EMP0202,Vivaan,Trivedi,employee0202@example.com,HR,HR Manager,2021-09-22,INACTIVE,2021-09-22,2024-07-15
+EMP0203,Aditya,Trivedi,employee0203@example.com,Customer Support,Support Executive,2023-05-16,INACTIVE,2023-05-16,2025-02-06
+EMP0204,Arjun,Trivedi,employee0204@example.com,Operations,Operations Executive,2025-03-22,INACTIVE,2025-03-22,2027-12-30
+EMP0205,Rohan,Trivedi,employee0205@example.com,Finance,Financial Analyst,2021-08-19,INACTIVE,2021-08-19,2024-12-21
+EMP0206,Rahul,Trivedi,employee0206@example.com,HR,HR Analyst,2020-01-31,INACTIVE,2020-01-31,2020-11-25
+EMP0207,Kunal,Trivedi,employee0207@example.com,IT,Backend Developer,2026-07-28,INACTIVE,2026-07-28,2028-07-03
+EMP0208,Harsh,Trivedi,employee0208@example.com,Operations,Operations Executive,2021-11-01,INACTIVE,2021-11-01,2025-02-23
+EMP0209,Yash,Trivedi,employee0209@example.com,Sales,Sales Executive,2024-09-27,INACTIVE,2024-09-27,2027-08-30
+EMP0210,Dhruv,Trivedi,employee0210@example.com,Sales,Sales Manager,2022-09-14,INACTIVE,2022-09-14,2024-06-15
+EMP0211,Kabir,Trivedi,employee0211@example.com,Customer Support,Support Manager,2024-03-05,INACTIVE,2024-03-05,2025-07-22
+EMP0212,Vihaan,Trivedi,employee0212@example.com,Administration,Admin Manager,2025-02-24,INACTIVE,2025-02-24,2027-09-05
+EMP0213,Ayaan,Trivedi,employee0213@example.com,Sales,Business Development Executive,2024-12-09,INACTIVE,2024-12-09,2028-07-25
+EMP0214,Reyansh,Trivedi,employee0214@example.com,Customer Support,Support Executive,2022-05-14,INACTIVE,2022-05-14,2023-12-15
+EMP0215,Ishaan,Trivedi,employee0215@example.com,IT,Software Developer,2023-12-20,INACTIVE,2023-12-20,2027-12-13
+EMP0216,Krish,Trivedi,employee0216@example.com,Finance,Finance Manager,2021-12-06,ON_LEAVE,2021-12-06,
+EMP0217,Dev,Trivedi,employee0217@example.com,Sales,Account Manager,2022-02-14,ON_LEAVE,2022-02-14,
+EMP0218,Manav,Trivedi,employee0218@example.com,Administration,Admin Executive,2026-02-18,ON_LEAVE,2026-02-18,
+EMP0219,Parth,Trivedi,employee0219@example.com,Finance,Financial Analyst,2023-03-22,ON_LEAVE,2023-03-22,
+EMP0220,Rudra,Trivedi,employee0220@example.com,Operations,Process Analyst,2020-02-09,ON_LEAVE,2020-02-09,
+EMP0221,Ananya,Trivedi,employee0221@example.com,Customer Support,Support Analyst,2023-01-23,ON_LEAVE,2023-01-23,
+EMP0222,Diya,Trivedi,employee0222@example.com,Operations,Process Analyst,2021-07-19,ON_LEAVE,2021-07-19,
+EMP0223,Isha,Trivedi,employee0223@example.com,IT,Frontend Developer,2026-04-11,ON_LEAVE,2026-04-11,
+EMP0224,Priya,Trivedi,employee0224@example.com,Sales,Business Development Executive,2025-02-10,ON_LEAVE,2025-02-10,
+EMP0225,Kavya,Trivedi,employee0225@example.com,Administration,Admin Executive,2026-04-13,ON_LEAVE,2026-04-13,
+EMP0226,Neha,Trivedi,employee0226@example.com,Operations,Operations Analyst,2020-11-18,ON_LEAVE,2020-11-18,
+EMP0227,Riya,Trivedi,employee0227@example.com,Customer Support,Support Analyst,2023-11-17,ON_LEAVE,2023-11-17,
+EMP0228,Meera,Trivedi,employee0228@example.com,IT,Backend Developer,2023-04-30,ON_LEAVE,2023-04-30,
+EMP0229,Pooja,Trivedi,employee0229@example.com,HR,HR Executive,2020-06-20,ON_LEAVE,2020-06-20,
+EMP0230,Aditi,Trivedi,employee0230@example.com,IT,QA Engineer,2025-01-27,ON_LEAVE,2025-01-27,
+EMP0231,Nisha,Trivedi,employee0231@example.com,IT,DevOps Engineer,2026-06-13,ON_LEAVE,2026-06-13,
+EMP0232,Sneha,Trivedi,employee0232@example.com,Customer Support,Support Analyst,2026-01-24,ON_LEAVE,2026-01-24,
+EMP0233,Simran,Trivedi,employee0233@example.com,HR,HR Manager,2023-07-28,ON_LEAVE,2023-07-28,
+EMP0234,Tanya,Trivedi,employee0234@example.com,Finance,Finance Manager,2021-03-06,ON_LEAVE,2021-03-06,
+EMP0235,Avni,Trivedi,employee0235@example.com,Administration,Admin Executive,2021-11-19,ON_LEAVE,2021-11-19,
+EMP0236,Kiara,Trivedi,employee0236@example.com,Marketing,Marketing Executive,2020-07-08,ON_LEAVE,2020-07-08,
+EMP0237,Myra,Trivedi,employee0237@example.com,IT,QA Engineer,2025-11-03,ON_LEAVE,2025-11-03,
+EMP0238,Sara,Trivedi,employee0238@example.com,IT,System Administrator,2023-10-03,ON_LEAVE,2023-10-03,
+EMP0239,Anika,Trivedi,employee0239@example.com,Finance,Financial Analyst,2025-04-12,ON_LEAVE,2025-04-12,
+EMP0240,Shreya,Trivedi,employee0240@example.com,Sales,Business Development Executive,2025-04-03,ON_LEAVE,2025-04-03,
+EMP0241,Aarav,Sharma,employee0241@example.com,Sales,Account Manager,2022-09-03,ON_LEAVE,2022-09-03,
+EMP0242,Vivaan,Sharma,employee0242@example.com,Operations,Process Analyst,2020-06-18,ON_LEAVE,2020-06-18,
+EMP0243,Aditya,Sharma,employee0243@example.com,Customer Support,Support Manager,2022-01-24,ON_LEAVE,2022-01-24,
+EMP0244,Arjun,Sharma,employee0244@example.com,Customer Support,Support Manager,2021-04-10,ON_LEAVE,2021-04-10,
+EMP0245,Rohan,Sharma,employee0245@example.com,Customer Support,Support Analyst,2025-05-31,ON_LEAVE,2025-05-31,
+EMP0246,Rahul,Sharma,employee0246@example.com,HR,HR Analyst,2022-06-14,ON_LEAVE,2022-06-14,
+EMP0247,Kunal,Sharma,employee0247@example.com,Administration,Admin Executive,2025-12-08,ON_LEAVE,2025-12-08,
+EMP0248,Harsh,Sharma,employee0248@example.com,Customer Support,Support Manager,2023-04-21,ON_LEAVE,2023-04-21,
+EMP0249,Yash,Sharma,employee0249@example.com,Sales,Business Development Executive,2022-12-30,ON_LEAVE,2022-12-30,
+EMP0250,Dhruv,Sharma,employee0250@example.com,Administration,Admin Executive,2023-12-18,ON_LEAVE,2023-12-18,
